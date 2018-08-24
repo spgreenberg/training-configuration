@@ -10,8 +10,8 @@ spring:
 security:
   oauth2:
     client:
-      clientId: ${vcap.service.oauth2.credentials.clientId}
-      clientSecret: ${vcap.service.oauth2.credentials.clientSecret}
+      clientId: ${vcap.services.oauth2.credentials.clientId}
+      clientSecret: ${vcap.services.oauth2.credentials.clientSecret}
       accessTokenUri: https://github.com/login/oauth/access_token
       userAuthorizationUri: https://github.com/login/oauth/authorize
       clientAuthenticationScheme: form
